@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruna Fernandes · QA Engineer</title>
+  <meta name="description" content="Bruna Fernandes — QA Engineer com mais de 5 anos em qualidade de software, automação Web e API, ecossistema PIX e IA aplicada a testes.">
+  <meta property="og:title" content="Bruna Fernandes · QA Engineer">
+  <meta property="og:description" content="Automação Web e API, sistemas financeiros críticos (PIX) e IA aplicada à Engenharia de Qualidade.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310b981'/><path d='M9 16.5l4.5 4.5L23 11' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo"><span class="logo-check">✓</span> bruna<span class="dim">.spec</span></a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#sobre">sobre</a>
+      <a href="#experiencia">experiência</a>
+      <a href="#skills">skills</a>
+      <a href="#ia">ia + qa</a>
+      <a href="#contato">contato</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+      <span class="sun">☀</span><span class="moon">☾</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="pulse"></span> disponível para novos desafios</p>
+        <h1>
+          Bruna<br>Fernandes
+          <span class="role">QA Engineer<span class="cursor">_</span></span>
+        </h1>
+        <p class="lead">
+          Eu encontro o bug <em>antes</em> do seu cliente. Mais de 5 anos garantindo qualidade em
+          sistemas financeiros de alta criticidade no <strong>ecossistema PIX</strong>, com automação
+          Web e API e <strong>IA aplicada à Engenharia de Qualidade</strong>.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#contato">Vamos conversar →</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/brunavfernandes" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Simulação de execução de testes">
+        <div class="term-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">~/bruna — zsh</span>
+          <button class="term-replay" id="replay" aria-label="Executar testes novamente">↻ rerun</button>
+        </div>
+        <pre class="term-body" id="termBody"></pre>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Números">
+      <div class="stat"><span class="num" data-count="5" data-suffix="+">0</span><span class="label">anos em Qualidade de Software</span></div>
+      <div class="stat"><span class="num" data-count="85" data-prefix="-" data-suffix="%">0</span><span class="label">no tempo de execução da suíte front-end</span></div>
+      <div class="stat"><span class="num" data-count="4" data-suffix="">0</span><span class="label">frameworks de automação no dia a dia</span></div>
+      <div class="stat"><span class="num txt">PIX</span><span class="label">sistemas financeiros de alta criticidade</span></div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <h2 class="section-title"><span class="kw">describe</span>(<span class="str">'Sobre mim'</span>)</h2>
+      <div class="about">
+        <div class="about-text">
+          <p>
+            Sou QA Engineer com atuação <strong>end-to-end</strong> no ciclo de qualidade: da análise de
+            requisitos e definição de cenários ao desenvolvimento de testes automatizados, investigação de
+            falhas e validação final das entregas.
+          </p>
+          <p>
+            Trabalho com aplicações Web, APIs, microserviços e mensageria, em ambientes de CI/CD, sempre com foco em
+            <strong>antecipar riscos</strong>, garantir a confiabilidade das entregas e melhorar os processos de
+            qualidade.
+          </p>
+          <p>
+            Uso LLMs e agentes de IA como parceiros de trabalho, para gerar cenários, achar edge cases e investigar
+            falhas mais rápido. A revisão técnica final continua sendo minha.
+          </p>
+        </div>
+        <ul class="principles">
+          <li><span class="tick">✓</span><div><b>Shift-left de verdade</b><small>Qualidade começa no refinamento, não no fim da sprint.</small></div></li>
+          <li><span class="tick">✓</span><div><b>Risco primeiro</b><small>Priorizo o que pode quebrar o negócio, não só o que é fácil de testar.</small></div></li>
+          <li><span class="tick">✓</span><div><b>Automação que se paga</b><small>Suítes rápidas, estáveis e que o time confia.</small></div></li>
+          <li><span class="tick">✓</span><div><b>Comunicação clara</b><small>Bug bem reportado é bug resolvido mais rápido.</small></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section">
+      <h2 class="section-title"><span class="kw">describe</span>(<span class="str">'Experiência'</span>)</h2>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job-marker"><span>✓</span></div>
+          <div class="job-card">
+            <header class="job-head">
+              <div>
+                <h3>Analista de Testes (QA)</h3>
+                <p class="company">Matera Systems Informática S/A</p>
+              </div>
+              <span class="period">set/2021 — out/2026</span>
+            </header>
+            <p class="job-summary">QA em soluções financeiras de alta criticidade no <b>ecossistema PIX</b>, participando de todo o ciclo de qualidade.</p>
+            <div class="highlight">
+              <span class="hl-num">-85%</span>
+              <span>no tempo de execução da suíte de automação front-end após otimização</span>
+            </div>
+            <ul class="tests">
+              <li><span class="pass">✓</span> testes funcionais, exploratórios, regressivos, de integração e E2E</li>
+              <li><span class="pass">✓</span> automação Web com Cypress e Playwright; APIs com RestAssured (Java e JavaScript)</li>
+              <li><span class="pass">✓</span> validação de APIs e microserviços, logs e mensageria com RabbitMQ</li>
+              <li><span class="pass">✓</span> validação de dados em Oracle e MySQL via SQL</li>
+              <li><span class="pass">✓</span> BDD com Cucumber/Gherkin e participação ativa nos refinamentos</li>
+              <li><span class="pass">✓</span> IA no ciclo de QA: agentes, BMAD e AI Automation Framework</li>
+              <li><span class="pass">✓</span> pipelines Jenkins, deploys, homologação e fechamento de versões</li>
+            </ul>
+            <div class="tags"><span>PIX</span><span>Cypress</span><span>Playwright</span><span>RestAssured</span><span>RabbitMQ</span><span>Oracle</span><span>Jenkins</span><span>BMAD</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-marker"><span>✓</span></div>
+          <div class="job-card">
+            <header class="job-head">
+              <div>
+                <h3>QA</h3>
+                <p class="company">Consultoria autônoma · setor de telecom</p>
+              </div>
+              <span class="period">out/2024 — ago/2025</span>
+            </header>
+            <p class="job-summary">Validação de aplicações web e APIs para o setor de telecom, incluindo soluções com <b>chatbots e IA</b>.</p>
+            <ul class="tests">
+              <li><span class="pass">✓</span> testes de fluxos conversacionais, regras de negócio e integrações de chatbots</li>
+              <li><span class="pass">✓</span> estruturação da automação front-end com Cypress do zero</li>
+              <li><span class="pass">✓</span> planos e cenários de teste alinhados aos critérios de aceite</li>
+              <li><span class="pass">✓</span> acompanhamento e validação de deploys em produção</li>
+              <li><span class="pass">✓</span> mais cobertura automatizada e menos esforço manual em regressão</li>
+            </ul>
+            <div class="tags"><span>Telecom</span><span>Chatbots</span><span>IA</span><span>Cypress</span><span>APIs</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-marker"><span>✓</span></div>
+          <div class="job-card">
+            <header class="job-head">
+              <div>
+                <h3>Estagiária de Testes</h3>
+                <p class="company">EISA / Ericsson Inovação</p>
+              </div>
+              <span class="period">fev/2021 — set/2021</span>
+            </header>
+            <p class="job-summary">Onde tudo começou: o ciclo completo de testes, da criação ao reteste.</p>
+            <ul class="tests">
+              <li><span class="pass">✓</span> testes manuais e automatizados com registro de evidências</li>
+              <li><span class="pass">✓</span> testes de APIs, levantamento de cenários e modelagem de casos de teste</li>
+            </ul>
+            <div class="tags"><span>APIs</span><span>Casos de teste</span><span>Evidências</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span class="kw">describe</span>(<span class="str">'Stack'</span>)</h2>
+      <p class="section-sub">Relatório de cobertura das ferramentas que uso no dia a dia. Clique num filtro para focar.</p>
+
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="all">todas</button>
+        <button class="chip" data-filter="auto">automação</button>
+        <button class="chip" data-filter="api">api</button>
+        <button class="chip" data-filter="ai">ia</button>
+        <button class="chip" data-filter="infra">infra & dados</button>
+        <button class="chip" data-filter="process">processo</button>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group" data-cat="auto">
+          <h3>Automação Web</h3>
+          <div class="pills"><span>Cypress</span><span>Playwright</span><span>Selenium WebDriver</span></div>
+        </div>
+        <div class="skill-group" data-cat="api">
+          <h3>Testes de API</h3>
+          <div class="pills"><span>RestAssured</span><span>Postman</span><span>Swagger</span></div>
+        </div>
+        <div class="skill-group" data-cat="auto">
+          <h3>BDD</h3>
+          <div class="pills"><span>Cucumber</span><span>Gherkin</span></div>
+        </div>
+        <div class="skill-group" data-cat="auto api">
+          <h3>Linguagens</h3>
+          <div class="pills"><span>Java</span><span>JavaScript</span><span>Node.js</span></div>
+        </div>
+        <div class="skill-group wide" data-cat="ai">
+          <h3>IA aplicada ao QA</h3>
+          <div class="pills"><span>Claude Code</span><span>ChatGPT</span><span>Gemini</span><span>MCP</span><span>LLMs</span><span>Agentes de IA</span><span>BMAD</span><span>AI Automation Framework</span><span>Prompt Engineering</span><span>AI-Driven Testing</span></div>
+        </div>
+        <div class="skill-group" data-cat="infra">
+          <h3>CI/CD & Versionamento</h3>
+          <div class="pills"><span>Jenkins</span><span>Pipelines</span><span>Git</span><span>GitHub</span><span>Bitbucket</span></div>
+        </div>
+        <div class="skill-group" data-cat="infra">
+          <h3>Arquitetura</h3>
+          <div class="pills"><span>Microserviços</span><span>RabbitMQ</span><span>AWS</span></div>
+        </div>
+        <div class="skill-group" data-cat="infra">
+          <h3>Dados</h3>
+          <div class="pills"><span>Oracle</span><span>MySQL</span><span>SQL</span></div>
+        </div>
+        <div class="skill-group" data-cat="infra">
+          <h3>Observabilidade</h3>
+          <div class="pills"><span>Grafana</span><span>Análise de logs</span><span>Métricas</span></div>
+        </div>
+        <div class="skill-group" data-cat="process">
+          <h3>Gestão & Métodos</h3>
+          <div class="pills"><span>Jira</span><span>Zephyr</span><span>Shift-Left</span><span>Scrum</span><span>Kanban</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA + QA -->
+    <section id="ia" class="section">
+      <h2 class="section-title"><span class="kw">describe</span>(<span class="str">'IA + QA'</span>)</h2>
+      <p class="section-sub">Como a IA entra no meu fluxo de qualidade. Ela acelera o trabalho, e a revisão técnica continua sendo minha.</p>
+
+      <ol class="pipeline">
+        <li><span class="step">01</span><h3>Requisitos</h3><p>LLMs ajudam a ler regras de negócio e apontar ambiguidades antes do desenvolvimento.</p></li>
+        <li><span class="step">02</span><h3>Cenários</h3><p>Agentes geram e refinam cenários e edge cases, que eu valido contra o risco real.</p></li>
+        <li><span class="step">03</span><h3>Automação</h3><p>Prompt Engineering e BMAD aceleram a criação e manutenção dos scripts.</p></li>
+        <li><span class="step">04</span><h3>Cobertura</h3><p>Análise assistida para encontrar lacunas na suíte e priorizar o que falta.</p></li>
+        <li><span class="step">05</span><h3>Troubleshooting</h3><p>Investigação de falhas com logs e contexto, chegando mais rápido na causa raiz.</p></li>
+      </ol>
+    </section>
+
+    <!-- FORMACAO -->
+    <section class="section">
+      <h2 class="section-title"><span class="kw">describe</span>(<span class="str">'Formação'</span>)</h2>
+      <div class="edu-grid">
+        <div class="edu"><span class="year">2026</span><h3>Pós-graduação em QA e Testes de Software</h3><p>UNICIV · Centro de Inovação VicIT</p></div>
+        <div class="edu"><span class="year">2023</span><h3>Programa de Testes e Qualidade de Software</h3><p>Júlio de Lima Consultoria e Treinamentos</p></div>
+        <div class="edu"><span class="year">2022</span><h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3><p>Faculdade Anhanguera Itaquera</p></div>
+        <div class="edu"><span class="year">2018</span><h3>Bacharelado em Engenharia Ambiental</h3><p>Faculdade Pitágoras de São Luís</p></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact">
+      <div class="contact-card">
+        <p class="mono dim">// expect(seuProjeto).toHaveQualidade()</p>
+        <h2>Bora garantir que a sua próxima entrega chegue sem surpresas?</h2>
+        <div class="contact-links">
+          <a href="mailto:brunavaladaresfernandes@hotmail.com" class="contact-item">
+            <span class="ci-label">e-mail</span>
+            <span class="ci-value">brunavaladaresfernandes@hotmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/brunavfernandes" target="_blank" rel="noopener" class="contact-item">
+            <span class="ci-label">linkedin</span>
+            <span class="ci-value">/in/brunavfernandes</span>
+          </a>
+          <a href="https://wa.me/5511976904548" target="_blank" rel="noopener" class="contact-item">
+            <span class="ci-label">whatsapp</span>
+            <span class="ci-value">(11) 97690-4548</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono"><span class="pass">✓</span> todos os testes passaram · © <span id="year"></span> Bruna Fernandes</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
