@@ -15,21 +15,23 @@ const term = document.getElementById('termBody');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const lines = [
-  { cmd: 'npx playwright test bruna.spec.ts' },
-  { html: '<span class="t-dim">Running 9 tests using 3 workers</span>', delay: 500 },
+  { cmd: 'npx cypress run --spec cypress/e2e/bruna.cy.js' },
+  { html: '<span class="t-dim">  Running:  </span><span class="t-cmd">bruna.cy.js</span><span class="t-dim">                     (1 of 1)</span>', delay: 500 },
   { html: '' },
-  { html: '<span class="t-suite">QA Engineer › Bruna Fernandes</span>' },
-  { test: 'possui 5+ anos em qualidade de software', ms: 112 },
-  { test: 'garante sistemas críticos no ecossistema PIX', ms: 241 },
-  { test: 'automatiza Web com Cypress, Playwright e Selenium', ms: 87 },
-  { test: 'valida APIs com RestAssured, Postman e Swagger', ms: 96 },
-  { test: 'reduziu ~85% do tempo da suíte front-end', ms: 34 },
-  { test: 'investiga microserviços, RabbitMQ e SQL', ms: 158 },
+  { html: '  <span class="t-suite">QA Engineer · Bruna Fernandes</span>' },
+  { test: 'tem 5+ anos de experiência em qualidade de software', ms: 112 },
+  { test: 'automatiza testes E2E com Cypress', ms: 87 },
+  { test: 'também automatiza com Playwright e Selenium', ms: 96 },
+  { test: 'testa APIs com RestAssured, Postman e Swagger', ms: 103 },
+  { test: 'reduziu ~85% do tempo de uma suíte front-end', ms: 34 },
+  { test: 'atuou em todo o ecossistema PIX', ms: 241 },
+  { test: 'validou deploys em homologação e produção', ms: 158 },
   { test: 'aplica IA, LLMs, agentes e BMAD ao QA', ms: 203 },
-  { test: 'atua com Jenkins e pipelines CI/CD', ms: 77 },
-  { test: 'comunica riscos com clareza ao time', ms: 41 },
+  { test: 'encontra o bug antes do cliente', ms: 41 },
   { html: '' },
-  { html: '<span class="t-badge">PASS</span> <span class="t-sum">9 passed</span> <span class="t-dim">(1.0s)</span>', delay: 400 },
+  { html: '  <span class="t-pass">9 passing</span> <span class="t-dim">(1s)</span>', delay: 300 },
+  { html: '' },
+  { html: '<span class="t-badge">✔ All specs passed!</span>', delay: 400 },
   { html: '<span class="t-prompt">❯</span> <span class="cursor">▋</span>' },
 ];
 
@@ -55,7 +57,7 @@ async function runTerminal() {
       }
       if (!reduceMotion) await sleep(300);
     } else if (line.test) {
-      el.innerHTML = `  <span class="t-pass">✓</span> ${line.test} <span class="t-time">(${line.ms}ms)</span>`;
+      el.innerHTML = `    <span class="t-pass">✓</span> ${line.test} <span class="t-time">(${line.ms}ms)</span>`;
       if (!reduceMotion) await sleep(140 + Math.random() * 160);
     } else {
       el.innerHTML = line.html || '&nbsp;';
