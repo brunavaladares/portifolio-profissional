@@ -299,6 +299,9 @@ h1 {
 .year { font-family: var(--mono); font-size: 13px; color: var(--accent); }
 .edu h3 { font-size: 17px; margin: 6px 0 4px; }
 .edu p { color: var(--muted); font-size: 14px; }
+.cert-grid { grid-template-columns: repeat(4, 1fr); }
+.section-title + .cert-grid { margin-top: 36px; }
+#ia .course { margin-top: 24px; }
 
 .course { margin-top: 18px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .course-label {
@@ -342,6 +345,7 @@ h1 {
   .pipeline li:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -19px; transform: translateX(-50%); }
   .contact-links { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 680px) {
   .nav-links { display: none; }
